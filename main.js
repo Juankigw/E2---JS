@@ -40,7 +40,6 @@ const mostrarError= (error)=>{
 const buscarPizza = (e) => {
   e.preventDefault();
   const pizzaId = input.value;
-  console.log(pizzaId.length);
   if (pizzaId.length === 0) {
     mostrarError("Por favor, ingrese una ID");
   }else if(arrayPizzas.some((pizza) => pizza.id == pizzaId)){
