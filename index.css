@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  body {
+    background: #0c0b0b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  
+  .buscador-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 4rem;
+    gap: 100px;
+  }
+  
+  .buscar-form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .input-container {
+    display: flex;
+  }
+  
+  .input-number {
+    display: flex;
+    background-color: #3b3b3b;
+    outline: none;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 0px 8px 8px 0px;
+    width: 250px;
+    color: white;
+    padding-left: 5px;
+    
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+  
+  .input-number::placeholder {
+    color: #468864;
+    font-size: 0.9rem;
+  }
+  
+  .input-container img {
+    width: 34px;
+    background-color: #3b3b3b;
+    border-radius: 8px 0px 0px 8px;
+    padding: 0.7rem;
+  }
+  
+  .buscar-btn {
+    background:linear-gradient(90deg, rgba(77,244,20,1) 0%, rgba(4,54,0,1) 100%);
+    outline: none;
+    border: 0px solid;
+    padding: 10px 40px;
+    border-radius: 8px;
+    color: rgb(226, 226, 226);
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  
+  .render-pizzas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: min(550px, 90%);
+    gap: 1rem;
+    color:aliceblue;
+  }
+  
+  .buscar-btn:hover {
+    background: linear-gradient(90deg,rgba(4,54,0,1)  0%, rgba(77,244,20,1) 100%);
+  }
+  
+  
+  @media (max-width: 576px) {
+    .input-number {
+      width: 100%;
+    }
+  
+    .input-container {
+      width: 95%;
+    }
+  
+  
+    .buscador-container {
+      padding: 2rem 1rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .buscar-btn {
+      width: 95%;
+    }
+  }
