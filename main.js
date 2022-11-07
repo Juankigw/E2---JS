@@ -34,7 +34,7 @@ const renderizarPizza = (pizza) => {
 };
 
 const mostrarError= (error)=>{
-  renderPizzas.innerHTML = `<h2>${error}</h2>`
+  renderPizzas.innerHTML = `<h3>${error}</h3>`
 }
 
 const buscarPizza = (e) => {
@@ -46,7 +46,7 @@ const buscarPizza = (e) => {
     const pizzaEncontrada = arrayPizzas.find((pizza) => pizza.id == pizzaId)
     renderizarPizza(pizzaEncontrada);
   } else  {
-    mostrarError("El id ingresado no existe")
+    mostrarError(`No existe una pizza con el id ${pizzaId}`)
   }
   input.value=""
 };
